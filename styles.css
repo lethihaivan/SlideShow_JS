@@ -1,0 +1,13 @@
+ [data-component="slideshow"] .mySlides {
+    display: none;
+    text-align:center
+  }
+
+  [data-component="slideshow"] .mySlides.active {
+    display: block;
+  }
+  h1 {
+  color: linear-gradient(#F00000, #DC281E);
+  font-size: 3rem;
+  text-align:center
+}
