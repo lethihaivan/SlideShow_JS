@@ -1,5 +1,5 @@
  var slideshows = document.querySelectorAll('[data-component="slideshow"]');
-  
+
   // Apply to all slideshows that you define with the markup wrote
   slideshows.forEach(initSlideShow);
 
@@ -8,18 +8,20 @@
     var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .mySlides`); // Get an array of slides
 
     var index = 0, time = 2000;
-    slides[index].classList.add('active');  
-    
+    slides[index].classList.add('active');
+
     setInterval( () => {
       slides[index].classList.remove('active');
-      
+
       //Go over each slide incrementing the index
       index++;
-      
+
       // If you go over all slides, restart the index to show the first slide and start again
-      if (index === slides.length) index = 0; 
-      
+      if (index === slides.length) index = 0;
+
       slides[index].classList.add('active');
 
     }, time);
   }
+
+  haicj
